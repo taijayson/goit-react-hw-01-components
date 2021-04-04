@@ -28,4 +28,4 @@ StatisticPage.propTypes = {
     ),
 };
 
-export default StatisticPage
+export default StatisticPage;

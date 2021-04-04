@@ -1,0 +1,54 @@
+.avatar {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 5px solid black;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(79, 79, 87);
+}
+
+.description {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  line-height: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name {
+  font-size: 36px;
+  color: darkred;
+}
+
+.stats {
+  list-style: none;
+  display: flex;
+}
+
+.stats_item {
+  background-color: dimgray;
+  padding: 15px 10px;
+}
+
+.stats_item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.label {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 5px;
+  font-size: 25px;
+  color: aliceblue;
+}
+
+.quantity {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color: aliceblue;
+}

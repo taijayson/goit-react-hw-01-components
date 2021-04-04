@@ -1,31 +1,32 @@
 import PropTypes from "prop-types";
+import styles from "./Profile.module.css"
 
 const ProfilePage = (props) => {
         const { profile } = props
         return (
-        <div className="profile">
-        <div className="description">
+        <div className={styles.profile}>
+        <div className={styles.description}>
             <img
-            src={profile.avatar}
-            alt={profile.name}
-            className="avatar"
+                src={profile.avatar}
+                alt={profile.name}
+                className={styles.avatar}
             />
-            <p className="name">{profile.name}</p>
-                    <p className="tag">{profile.tag}</p>
-                    <p className="location">{profile.location}</p>
+            <p className={styles.name}>{profile.name}</p>
+                    <p className={styles.tag}>@{profile.tag}</p>
+                    <p className={styles.location}>{profile.location}</p>
         </div>
-        <ul className="stats">
-            <li>
-            <span className="label">Followers</span>
-            <span className="quantity">{profile.stats.followers}</span>
+                <ul className={styles.stats}>
+            <li className={styles.stats_item}>
+            <span className={styles.label}>Followers |</span>
+                <span className={styles.quantity}>{profile.stats.followers}</span>
             </li>
-            <li>
-            <span className="label">Views</span>
-            <span className="quantity">{profile.stats.views}</span>
+            <li className={styles.stats_item}>
+            <span className={styles.label}>Views |</span>
+            <span className={styles.quantity}>{profile.stats.views}</span>
             </li>
-            <li>
-            <span className="label">Likes</span>
-            <span className="quantity">{profile.stats.likes}</span>
+            <li className={styles.stats_item}>
+                <span className={styles.label}>Likes |</span>
+            <span className={styles.quantity}>{profile.stats.likes}</span>
             </li>
         </ul>
         </div>
@@ -45,5 +46,5 @@ ProfilePage.propTypes = {
         })
 }      
 
-export default ProfilePage
+export default ProfilePage;
 
