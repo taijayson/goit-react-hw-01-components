@@ -12,10 +12,10 @@ import TransactionHistory from "./components/TransactionHistory/TransactionHisto
 
 const App = () =>
   <>
-    <ProfilePage profile={profile} />;
-    <StatisticPage title="Upload stats" statisticalData={statisticalData} />;
-    <FriendList friends={friends} />;
-    <TransactionHistory transactions={transactions} />;
+    <ProfilePage profile={profile} />
+    <StatisticPage title="Upload stats" statisticalData={statisticalData} />
+    <FriendList friends={friends} />
+    <TransactionHistory transactions={transactions} />
   </>
   
 export default App;
